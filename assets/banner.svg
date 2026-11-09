@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <linearGradient id="cyber-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: url(#bg-grad); }
+    .grid-line { stroke: #334155; stroke-width: 0.5; opacity: 0.25; }
+    
+    /* Dynamic Animations */
+    @keyframes pulseOrb {
+      0% { r: 180px; opacity: 0.15; }
+      50% { r: 240px; opacity: 0.28; }
+      100% { r: 180px; opacity: 0.15; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-100px); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: translateY(400px); opacity: 0; }
+    }
+    @keyframes floatCard1 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes floatCard2 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes dashStream {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes rotateRing {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pingDot {
+      0% { r: 3; opacity: 0.3; }
+      50% { r: 6; opacity: 1; }
+      100% { r: 3; opacity: 0.3; }
+    }
+
+    .animated-orb1 { animation: pulseOrb 8s infinite ease-in-out; }
+    .scan-beam { animation: scanline 6s infinite linear; }
+    .card-float-left { animation: floatCard1 7s infinite ease-in-out; }
+    .card-float-right { animation: floatCard2 6s infinite ease-in-out; }
+    .stream-line {
+      stroke-dasharray: 8 6;
+      animation: dashStream 4s linear infinite;
+    }
+    .rotating-gear {
+      transform-origin: 1040px 180px;
+      animation: rotateRing 24s linear infinite;
+    }
+    .pulsing-status { animation: pingDot 2.5s infinite ease-in-out; }
+
+    /* Typography */
+    .title-main {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 46px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      fill: #ffffff;
+    }
+    .title-highlight {
+      fill: url(#cyber-cyan);
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      fill: #38bdf8;
+    }
+    .tag-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #cbd5e1;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" class="bg" rx="16"/>
+
+  <!-- Subtle Circuit / Tech Grid -->
+  <g class="grid-layer">
+    <line x1="80" y1="0" x2="80" y2="360" class="grid-line" />
+    <line x1="240" y1="0" x2="240" y2="360" class="grid-line" />
+    <line x1="400" y1="0" x2="400" y2="360" class="grid-line" />
+    <line x1="560" y1="0" x2="560" y2="360" class="grid-line" />
+    <line x1="720" y1="0" x2="720" y2="360" class="grid-line" />
+    <line x1="880" y1="0" x2="880" y2="360" class="grid-line" />
+    <line x1="1040" y1="0" x2="1040" y2="360" class="grid-line" />
+
+    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line" />
+    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line" />
+    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line" />
+    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line" />
+    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line" />
+  </g>
+
+  <!-- Dynamic Glowing Ambient Orbs (Background depth) -->
+  <circle cx="1020" cy="180" r="200" fill="#38bdf8" filter="url(#glow-cyan)" class="animated-orb1" />
+  <circle cx="150" cy="80" r="140" fill="#6366f1" filter="url(#glow-cyan)" opacity="0.15" />
+
+  <!-- Animated Data Streams (Underneath text) -->
+  <path d="M 700 80 Q 860 140 1020 90 T 1160 180" fill="none" stroke="#0ea5e9" stroke-width="2" opacity="0.4" class="stream-line" />
+  <path d="M 650 280 Q 820 220 980 290 T 1180 240" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.35" class="stream-line" />
+
+  <!-- Dynamic Tech Ring / Gear Structure on the Right -->
+  <g class="rotating-gear" opacity="0.35">
+    <circle cx="1040" cy="180" r="110" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="12 10" />
+    <circle cx="1040" cy="180" r="85" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="24 16" />
+    <circle cx="1040" cy="180" r="60" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="8 6" />
+  </g>
+
+  <!-- Dynamic Floating Telemetry Status Cards (Right side) -->
+  <g class="card-float-left" transform="translate(930, 75)">
+    <rect width="210" height="68" rx="10" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="24" cy="26" r="5" fill="#10b981" class="pulsing-status" />
+    <text x="38" y="30" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f8fafc">CVE Auto-Remediated</text>
+    <text x="38" y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">99.8% Fleet Compliant</text>
+    <rect x="156" y="20" width="38" height="18" rx="9" fill="#065f46" />
+    <text x="175" y="33" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#34d399">SAFE</text>
+  </g>
+
+  <g class="card-float-right" transform="translate(960, 215)">
+    <rect width="195" height="66" rx="10" fill="url(#card-grad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="22" cy="25" r="5" fill="#38bdf8" class="pulsing-status" />
+    <text x="36" y="29" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Multi-OS Orchestration</text>
+    <text x="36" y="49" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Win • macOS • Linux</text>
+    <rect x="145" y="19" width="36" height="18" rx="9" fill="#1e1b4b" />
+    <text x="163" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#818cf8">SYNC</text>
+  </g>
+
+  <!-- Subtle Horizontal Scan Beam -->
+  <line x1="60" y1="0" x2="1140" y2="0" stroke="url(#cyber-cyan)" stroke-width="1.5" class="scan-beam" />
+
+  <!-- ================= FOREGROUND CONTENT ================= -->
+  <!-- Top Category Pill / Badge -->
+  <g transform="translate(70, 52)">
+    <rect width="240" height="30" rx="15" fill="#0f172a" stroke="#0284c7" stroke-width="1.2" />
+    <circle cx="16" cy="15" r="4" fill="#38bdf8" />
+    <text x="30" y="20" class="badge-text">ENTERPRISE ENDPOINT SECURITY</text>
+  </g>
+
+  <!-- Main Headline (Foreground crisp text) -->
+  <text x="70" y="142" class="title-main">
+    Awesome <tspan class="title-highlight">Software Update &amp;</tspan>
+  </text>
+  <text x="70" y="198" class="title-main">
+    <tspan class="title-highlight">Patch Management</tspan> 🛡️
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="240" class="subtitle">
+    Curated SaaS suites &amp; Open-Source engines for endpoint compliance, CVE remediation &amp; fleet security
+  </text>
+
+  <!-- Quick Feature Badges in Foreground -->
+  <g transform="translate(70, 275)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="135" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="67" y="22" text-anchor="middle" class="tag-text">🏢 SaaS Platforms</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(147, 0)">
+      <rect width="145" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="72" y="22" text-anchor="middle" class="tag-text">💻 Open-Source Tools</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(304, 0)">
+      <rect width="148" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="74" y="22" text-anchor="middle" class="tag-text">⚡ CVE Prioritization</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(464, 0)">
+      <rect width="155" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="77" y="22" text-anchor="middle" class="tag-text">📈 Market Intelligence</text>
+    </g>
+  </g>
+</svg>
