@@ -131,7 +131,7 @@ Self-hosted, transparent, and community-driven tools for IT administrators, DevO
 
 > Repositories sorted descending by **GitHub Stargazer Count** 🌟 *(Badges link directly to each repo's live stargazers page)*
 
-| Project 📂 | Star Count 🌟 | Primary Stack 🛠️ | License 📜 | Specialization 🎯 |
+| Project 📂 | Stars_Count 🌟 | Primary Stack 🛠️ | License 📜 | Specialization 🎯 |
 |:---|:---|:---|:---|:---|
 | **[osquery/osquery](https://github.com/osquery/osquery)** | [![Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | C++ / SQL / CMake | Apache-2.0 | SQL-based OS instrumentation & patch compliance telemetry |
 | **[wazuh/wazuh](https://github.com/wazuh/wazuh)** | [![Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | C / C++ / Python | GPL-2.0 | SIEM, XDR & automated CVE vulnerability correlation |
