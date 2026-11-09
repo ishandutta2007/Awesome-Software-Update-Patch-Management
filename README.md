@@ -4,10 +4,15 @@
 
 # 🛡️ Awesome Software Update & Patch Management 🚀
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Software-Update-Patch-Management/pulls)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Software-Update-Patch-Management/pulse)
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&log==discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Software-Update-Patch-Management/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Software-Update-Patch-Management/pulse"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub follower" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 > 🌟 **A battle-tested, curated collection of top Software Update, Vulnerability Remediation, and Patch Management solutions.** Spans enterprise SaaS platforms and self-hosted open-source engines for automating operating system (OS) patches (Windows, macOS, Linux), third-party application updates, CVE compliance, and multi-tenant fleet security.
 >
@@ -26,6 +31,8 @@
   - [🔍 Open-Source Project Deep Dives](#-open-source-project-deep-dives)
 - [⚖️ Comprehensive Comparison at a Glance](#-comprehensive-comparison-at-a-glance)
 - [🤝 Contributing Guidelines](#-contributing-guidelines)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 - [📄 License](#-license)
 
 ---
@@ -245,6 +252,24 @@ We welcome contributions from system administrators, DevOps engineers, and secur
    - Core technology stack and open-source license (or explicit SaaS pricing model & free tier limit).
    - A concise 2–3 sentence description outlining what unique problem it solves.
 4. 🚀 Open a Pull Request with a clear description of your additions!
+
+---
+
+## 💖 Support & Sponsorship ☕
+
+Thank you for visiting and using this curated resource! Maintaining and curating comprehensive, up-to-date lists takes continuous effort.
+
+If you find this repository helpful:
+- ⭐ **Star** this repository on GitHub to help others discover it.
+- 🍴 **Fork** it to build your own customized fleet patch tracking playbook.
+- 📢 **Share** it with your fellow sysadmins, DevOps engineers, and SecOps teams!
+- ☕ If you'd like to support ongoing development and maintenance, consider buying me a coffee via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**! Every bit of support is deeply appreciated! ❤️
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Software-Update-Patch-Management&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Software-Update-Patch-Management&type=date&legend=top-left)
 
 ---
 
